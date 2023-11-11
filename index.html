@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de texto em áudio</title>
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/global.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/animation.css">
+    <link rel="stylesheet" href="./styles/toastNotification.css">
+    <script defer type="module" src="./scripts/script.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Transforme Seu Texto em Áudio Gratuitamente</h1>
+            <h2>Converta Agora sem Custos!</h2>
+        </header>
+        <main>
+            <div>
+                <section>
+                    <img src="./imgs/mouseClick.jpg">
+                    <div>
+                        <h4>Áudio em um Clique!</h4>
+                        <p>
+                            Com um clique, você transforma o ordinário em extraordinário.
+                        </p>
+                    </div>
+                </section>
+                <section>
+                    <img src="./imgs/documents.jpg">
+                    <div>
+                        <h4>
+                            Conversão Simples e Rápida!
+                        </h4>
+                        <p>Escolha seu idioma, digite seu texto e converta instantaneamente.
+                        </p>
+                    </div>
+                </section>
+            </div>
+            <div>
+                <p>Experimente agora</p>
+                <form>
+                    <div>
+                        <div>
+                            <textarea maxlength="30000"></textarea>
+                            <div>
+                                <div>
+                                    <p>Caracteres: <span class="counterCharacters">0</span>/30.000</p>
+                                </div>
+                                <button type="button" class="buttonClearText">
+                                    <img src="./imgs/trash.svg">
+                                    Limpar
+                                    Texto</button>
+                            </div>
+                        </div>
+                        <div>
+                            <div>
+                                <label>Escolha um idioma</label>
+                                <select></select>
+                            </div>
+                            <div>
+                                <div>
+                                    <img id="soundImage" data-mute="false" src="./imgs/sound.svg">
+                                    <input type="range" min="0" max="1" step="0.1" value="1" />
+                                </div>
+                                <button type="button" class="buttonSpeed">
+                                    <span>1x</span>
+                                </button>
+                            </div>
+                            <div id="downloadAudio">
+
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <button id="convertButton" type="submit">
+                            <img id="imgLoader" src="./imgs/load.svg">Converter
+                        </button>
+                    </div>
+                </form>
+            </div>
+            <div>
+                <div>
+                    <h2>Como Usar o Conversor?</h2>
+                </div>
+                <div>
+                    <div>
+                        <img src="./imgs/inputText.png">
+                        <div>
+                            <h3>Passo 1</h3>
+                            <p>No campo de texto, insira o seu texto.</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <img src="./imgs/settings.png">
+                        <div>
+                            <h3>Passo 2</h3>
+                            <p>Defina as opções de idioma, volume e velocidade.</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <img src="./imgs/convertButton.png">
+                        <div>
+                            <h3>Passo 3</h3>
+                            <p>Clique no botão de converter.</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <img src="./imgs/screenFullOne.png">
+                        <div>
+                            <h3>Passo 4</h3>
+                            <p>Selecione tela cheia.</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <img src="./imgs/fullScreenTwo.png">
+                        <div>
+                            <h3>Passo 5</h3>
+                            <p>Clique na opção de tela cheia, ative o áudio e compartilhe</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <img src="./imgs/load.svg">
+                        <div>
+                            <h3>Passo 6</h3>
+                            <p>Aguarde enquanto o programa grava o áudio. Assim que o som da fala encerrar, o áudio será
+                                liberado para download.</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <img src="./imgs/buttonDownload.png">
+                        <div>
+                            <h3>Passo 7</h3>
+                            <p>Clique em baixar</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <footer>
+        <div>
+            <p>&copy;AugustoHeitor</p>
+            <ul class="social-networks">
+                <li class="instagram"><a href="https://www.instagram.com/augustoheitor_/" target="_blank">Instagram</a>
+                </li>
+                <li class="linkedin"><a href="https://www.linkedin.com/in/augusto-heitor-36aa32187/"
+                        target="_blank">LinkedIn</a></li>
+                <li class="youtube"><a href="https://www.youtube.com/channel/UCCYbIaEv0hcGlPbhCnf_CZA"
+                        target="_blank">YouTube</a></li>
+                <li class="github"><a href="https://github.com/AugustoHeitor" target="_blank">GitHub</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+
+</html>
